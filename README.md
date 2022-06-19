@@ -1,4 +1,4 @@
-# 
+# GIFM
 
 플러터 주제탐구 학술 프로젝트
 
@@ -9,3 +9,4 @@
 
 - [다트: 언어](https://dart.dev)
 - [플러터: 프레임워크](https://flutter.dev/?gclid=CjwKCAjw77WVBhBuEiwAJ-YoJA4ft93HovCDtOXCoycXPocNTXOlZOtaMNTX1CKXt_--xaldRt_acRoCeLkQAvD_BwE&gclsrc=aw.ds)
+- [VsCode: 에디터](https://code.visualstudio.com)
