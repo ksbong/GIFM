@@ -1,12 +1,10 @@
 # gifm
 
-A new Flutter project.
+플러터 주제탐구 학술 프로젝트
 
-## Getting Started
+## 이 앱은
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
+광혜원고등학교 주제탐구 학술 프로젝트로 인한 활동에 의해 시작된 프로젝트의 결과물입니다.
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
