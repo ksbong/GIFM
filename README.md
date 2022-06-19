@@ -1,4 +1,4 @@
-# gifm
+# 
 
 플러터 주제탐구 학술 프로젝트
 
@@ -7,9 +7,5 @@
 광혜원고등학교 주제탐구 학술 프로젝트로 인한 활동에 의해 시작된 프로젝트의 결과물입니다.
 다트 언어를 기반으로 하여 플러터를 활용하여 앱을 제작하였습니다.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [다트: 언어](https://dart.dev)
+- [플러터: 프레임워크](https://flutter.dev/?gclid=CjwKCAjw77WVBhBuEiwAJ-YoJA4ft93HovCDtOXCoycXPocNTXOlZOtaMNTX1CKXt_--xaldRt_acRoCeLkQAvD_BwE&gclsrc=aw.ds)
