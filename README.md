@@ -1,16 +1,12 @@
-# gifm
+# GIFM
 
-A new Flutter project.
+플러터 주제탐구 학술 프로젝트
 
-## Getting Started
+## 이 앱은
 
-This project is a starting point for a Flutter application.
+광혜원고등학교 주제탐구 학술 프로젝트로 인한 프로젝트의 결과물입니다. <br />
+다트 언어를 기반으로 하여 플러터를 활용하여 앱을 제작하였습니다.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [다트: 언어](https://dart.dev)
+- [플러터: 프레임워크](https://flutter.dev/?gclid=CjwKCAjw77WVBhBuEiwAJ-YoJA4ft93HovCDtOXCoycXPocNTXOlZOtaMNTX1CKXt_--xaldRt_acRoCeLkQAvD_BwE&gclsrc=aw.ds)
+- [VsCode: 에디터](https://code.visualstudio.com)
