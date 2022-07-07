@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -53,31 +54,88 @@ class MainPageState extends State<MainPage> {
         body: SafeArea(
       child: Column(
         children: <Widget>[
+          // 위에 글씨 부분
           AnimatedContainer(
-              height: _showAppbar ? 100.0 : 0.0,
-              duration: const Duration(microseconds: 200),
-              child: SizedBox(
-                  height: _showAppbar ? 30.0 : 0.0,
-                  child: const Padding(
-                    padding: EdgeInsets.only(top: 20, right: 180),
-                    child: Text(
-                      'G.I.F.M\n#어떤 게임의\n정보를 원하시나요?',
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold),
-                    ),
-                  ))),
+            height: _showAppbar ? 100.0 : .0,
+            duration: const Duration(microseconds: 300),
+            child: SizedBox(
+              height: _showAppbar ? 30.0 : .0,
+              child: const Padding(
+                padding: EdgeInsets.only(
+                  top: 5,
+                ),
+                child: Padding(
+                  padding: EdgeInsets.only(right: 180),
+                  child: Text(
+                    'G.I.F.M\n#어떤 게임의\n정보를 원하시나요?',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
+            ),
+          ),
+
+          // 스크롤 부분
           Expanded(
             child: SingleChildScrollView(
               controller: _scrollViewController,
               child: Column(
                 children: <Widget>[
-                  buildCard('assets/images/lol.jpg', '[ League of Legends ]'),
-                  buildCard('assets/images/valorant.jpg', '[ Valorant ]'),
-                  buildCard('assets/images/overwatch.jpg', '[ Overwatch ]'),
-                  buildCard('assets/images/pubg.jpg', '[ BattleGrounds ]'),
-                  buildCard('assets/images/maplestory.jpg', '[ Maple Story ]')
+                  GestureDetector(
+                    onTap: () => {
+                      // ignore: deprecated_member_use
+                      launch(
+                          'https://www.leagueoflegends.com/ko-kr/news/tags/patch-notes/')
+                    },
+                    child: buildCard(
+                      'assets/images/lol.jpg',
+                      '[ League of Legends ]',
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () => {
+                      // ignore: deprecated_member_use
+                      launch('https://playvalorant.com/ko-kr/news/')
+                    },
+                    child: buildCard(
+                      'assets/images/valorant.jpg',
+                      '[ VALORANT ]',
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () => {
+                      // ignore: deprecated_member_use
+                      launch(
+                          'https://playoverwatch.com/ko-kr/news/patch-notes/live')
+                    },
+                    child: buildCard(
+                      'assets/images/overwatch.jpg',
+                      '[ OVERWATCH ]',
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () => {
+                      // ignore: deprecated_member_use
+                      launch(
+                          'https://bbs.pubg.game.daum.net/gaia/do/pubg/update/list?bbsId=PN002&objCate1=255')
+                    },
+                    child: buildCard(
+                      'assets/images/pubg.jpg',
+                      '[ BATTLEGROUNDS ]',
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () =>
+                        // ignore: deprecated_member_use
+                        {launch('https://maplestory.nexon.com/News/Update')},
+                    child: buildCard(
+                      'assets/images/maplestory.jpg',
+                      '[ Maple Story ]',
+                    ),
+                  )
                 ],
               ),
             ),
